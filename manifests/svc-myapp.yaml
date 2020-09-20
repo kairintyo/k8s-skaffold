@@ -13,4 +13,4 @@ spec:
   selector:
     app: myapp
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
