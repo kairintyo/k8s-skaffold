@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta21
+kind: Config
+metadata:
+  name: sample-k-s-app
+build:
+  artifacts:
+  - image: ladicle/sample-k8s-app
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - manifests/deploy-myapp.yaml
+    - manifests/svc-myapp.yaml

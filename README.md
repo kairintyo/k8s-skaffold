@@ -1,3 +1,5 @@
-# Sample Kubernetes Applications
+## build
 
-Sample applications running on Kubernetes
+```
+skaffold dev --port-forward
+```

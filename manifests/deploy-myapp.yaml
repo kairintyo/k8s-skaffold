@@ -24,12 +24,11 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: ladicle/sample-k8s-app
-        imagePullPolicy: Always
-        name: sample-k8s-app
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
+        - image: ladicle/sample-k8s-app
+          name: sample-k8s-app
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
